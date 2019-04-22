@@ -16,7 +16,7 @@ $( document ).ready(function() {
 			email: $("#email").val(),
 			dateofbirth: $("#dateofbirth").val(),
 			phonenumber: $("#phonenumber").val(),
-			gender: $("#gender").val(),
+			gender: $("input[name='gender']:checked").val(),
     	}
     	console.log(formData); //debug
     	// DO POST
