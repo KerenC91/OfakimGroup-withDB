@@ -12,10 +12,10 @@ $( document ).ready(function() {
     	
     	// PREPARE FORM DATA
     	var formData = {
-			fullName: $("#fullName").val(),
+			fullname: $("#fullname").val(),
 			email: $("#email").val(),
-			dateOfBirth: $("#dateOfBirth").val(),
-			phoneNumber: $("#phoneNumber").val(),
+			dateofbirth: $("#dateofbirth").val(),
+			phonenumber: $("#phonenumber").val(),
 			gender: $("#gender").val(),
     	}
     	console.log(formData); //debug
@@ -29,7 +29,7 @@ $( document ).ready(function() {
 			success : function(user) {
 				$("#postResultDiv").html("<p>" + 
 					"Post Successfully! <br>" +
-					"--> " + user.fullName + " " + user.email + " " + user.dateOfBirth + " " + user.phoneNumber
+					"--> " + user.fullname + " " + user.email + " " + user.dateofbirth + " " + user.phonenumber
 					+ " " + user.gender + ", createdAt: " + user.createdAt + "</p>"); 
 
 			},
@@ -46,10 +46,10 @@ $( document ).ready(function() {
     }
     
     function resetData(){
-		$("#fullName").val("");
+		$("#fullname").val("");
 		$("#email").val("");
-		$("#dateOfBirth").val("");
-		$("#phoneNumber").val("");
+		$("#dateofbirth").val("");
+		$("#phonenumber").val("");
 		$("#gender").val("");
     }
 })

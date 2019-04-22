@@ -15,8 +15,8 @@ $( document ).ready(function() {
 				$('#getResultDiv ul').empty();
 				var usersList = "";
 				$.each(result, function(i, user){
-					$('#getResultDiv .list-group').append(user.id + ". " + user.fullName + " " 
-					+ user.email + " " + user.dateOfBirth + " " + user.phoneNumber
+					$('#getResultDiv .list-group').append(user.id + ". " + user.fullname + " " 
+					+ user.email + " " + user.dateofbirth + " " + user.phonenumber
 					+ " " + user.gender + "<br>")
 				});
 				console.log("Success: ", result);

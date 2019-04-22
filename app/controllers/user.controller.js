@@ -6,13 +6,13 @@ exports.save = (req, res) => {
 	console.log('Post a User: ' + JSON.stringify(req.body));
 	
 	User.create({
-		fullName: req.body.fullName,
+		fullname: req.body.fullname,
 		email: req.body.email,
-		dateOfBirth: req.body.dateOfBirth,
-		phoneNumber: req.body.phoneNumber,
+		dateofbirth: req.body.dateofbirth,
+		phonenumber: req.body.phonenumber,
 		gender: req.body.gender,
 	},{
-		attributes: {include: ['fullName', 'email', 'dateOfBirth', 'phoneNumber', 'gender']}
+		attributes: {include: ['fullname', 'email', 'dateofbirth', 'phonenumber', 'gender']}
 	}).then(user => {
 		res.send(user);
 	})
@@ -22,7 +22,7 @@ exports.save = (req, res) => {
 exports.findAll = (req, res) => {
 	console.log("Get All Users");
 	User.findAll({
-		attributes: ['id', 'fullName', 'email', 'dateOfBirth', 'phoneNumber', 'gender']
+		attributes: ['id', 'fullname', 'email', 'dateofbirth', 'phonenumber', 'gender']
 	}).then(users => {
 	   res.send(users);
 	});
