@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JQuery Ajax - Bootstrap - NodeJS/Express - MySQL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/static/js/getrequest.js"></script>
+  <script src="/static/js/postrequest.js"></script>
+</head>
+ 
+<body> 
+<div class="container"> 
+<div class="col-sm-4">
+	<h3>NodeJS/Express Post/Get Ajax</h3>
+	<div>		
+		<form id="userForm">
+		  <div class="form-group">
+				<label for="fullName">Full Name:</label>
+				<input type="text" class="form-control" id="fullName"/>
+		  </div>
+		  <div class="form-group">
+				<label for="email">Email:</label>
+				<input type="text" class="form-control" id="email"/>
+			</div>
+			<div class="form-group">
+				<label for="dateOfBirth">Date Of Birth:</label>
+				<input type="text" class="form-control" id="dateOfBirth"/>
+			</div>
+			<div class="form-group">
+				<label for="phoneNumber">Phone Number:</label>
+				<input type="text" class="form-control" id="phoneNumber"/>
+			</div>
+			<div class="form-group">
+				<label for="gender">Gender:</label>
+				<input type="text" class="form-control" id="gender"/>
+			</div>
+			<!-- <div class="form-group">
+        <label for="gender">Gender</label>
+        <br>
+        <label style="margin:5px;">
+            <input type="radio" class="form-control" value="male" id="male" name="gender" checked>
+            <span>Male</span>
+        </label>
+        <label style="margin:5px;">
+            <input type="radio" class="form-control" value="female" id="female" name="gender">
+            <span>Female</span>
+        </label>
+    	</div> -->
+		  <button type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+	<div id="postResultDiv">
+	</div>
+	<br>
+	<div>
+		<button id="allUsers" type="button" class="btn btn-default">All Registered Users</button>
+		<div id="getResultDiv">
+	        <ul class="list-group">
+	    	</ul>
+    	</div>
+	</div>
+</div>	
+</div>
+</body>
+</html>
